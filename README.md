@@ -53,7 +53,7 @@ Edit the "Primary VNIC information" Section.
 
 I will let you choose what to do for this sub step.
 
-### three: Generate an SSH key
+### Three: Generate an SSH key
 
 It's the most important thing keep it and don't lost it you will need it if you want to enter your VM anytime!
 
@@ -127,5 +127,21 @@ Now run the Server
 `java -Xmx6G -Xms6G -jar server.jar nogui`
 
 You can allocate any ram you want i put 6 just for the example!
+
+### Step: Bonus Let the server run all the time with Tmux
+
+Now that your server is up, as you know if you quit your vm the server will shut down the second you quit it and so to avoid that we will use Tmux a terminal multiplexer.
+
+So first of all install Tmux
+
+`yum install tmux`
+
+And now we will create a sesion
+
+I will let you read the documentation here if you have any question come ask to one of us!
+
+### Step: Bonus Install Mods in your server
+
+Now you have your server who run all the time try to install mods in it!
 
 
