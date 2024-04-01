@@ -88,7 +88,7 @@ Now you will install java the lastest version with yum
 
 Now you will start the server
 
-`java -Xmx9G -Xms7G -jar server.jar nogui`
+`java -Xmx6G -Xms6G -jar server.jar nogui`
 
 Oh no! It didn"t work!
 
@@ -106,6 +106,26 @@ Change the description of the server, the max-player connected at the same time 
 
 ### Step: 5 Open the server Firewall
 
+Now we will need to open the subnet so your friends can join you in your server
 
+In your VCN we will add 2 new Ingress Rules one TCP and one UDP each with a "Source CIDR" of 0.0.0.0/0 and a destination port of 25565 so it will be connected with any port!
+
+Now you will open the ports of the vm in the VM use these 2 commands to open it:
+
+`sudo firewall-cmd --permanent --zone=public --add-port=25565/tcp`
+
+`sudo firewall-cmd --permanent --zone=public --add-port=25565/udp`
+
+and now we reload the firewall
+
+`sudo firewall-cmd --reload`
+
+### Step: 6 Starting the Server
+
+Now run the Server
+
+`java -Xmx6G -Xms6G -jar server.jar nogui`
+
+You can allocate any ram you want i put 6 just for the example!
 
 
