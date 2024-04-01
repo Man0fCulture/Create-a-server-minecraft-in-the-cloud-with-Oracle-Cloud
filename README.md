@@ -104,7 +104,7 @@ You can edit the server.properties
 
 Change the description of the server, the max-player connected at the same time etc...
 
-### Step: 5 Open the server Firewall
+## Step: 5 Open the server Firewall
 
 Now we will need to open the subnet so your friends can join you in your server
 
@@ -120,7 +120,7 @@ and now we reload the firewall
 
 `sudo firewall-cmd --reload`
 
-### Step: 6 Starting the Server
+## Step: 6 Starting the Server
 
 Now run the Server
 
@@ -128,7 +128,7 @@ Now run the Server
 
 You can allocate any ram you want i put 6 just for the example!
 
-### Step: Bonus Let the server run all the time with Tmux
+## Step: Bonus Let the server run all the time with Tmux
 
 Now that your server is up, as you know if you quit your vm the server will shut down the second you quit it and so to avoid that we will use Tmux a terminal multiplexer.
 
@@ -140,7 +140,7 @@ And now we will create a sesion
 
 I will let you read the documentation here if you have any question come ask to one of us!
 
-### Step: Bonus Install Mods in your server
+## Step: Bonus Install Mods in your server
 
 Now you have your server who run all the time try to install mods in it!
 
