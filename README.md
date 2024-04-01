@@ -11,9 +11,15 @@ Loic RAVALISON https://github.com/loicrava
 
 Public Cloud : Oracle Cloud https://www.oracle.com/fr/cloud/definition-cloud-public/
 
+### Minecraft server.jar
+
+https://www.minecraft.net/en-us/download/server
+
 ### To connect to the VM
 
 The SSH protocol https://www.ssh.com/academy/ssh/protocol
+
+The SCP protocol https://www.ionos.com/digitalguide/server/know-how/scp-secure-copy/
 
 ### In the VM
 
@@ -24,6 +30,7 @@ Tmux https://github.com/tmux/tmux/wiki
 ## Step: 0 Create an account
 
 https://www.oracle.com/fr/cloud/free/
+
 You will need to enter your credit card but don't worry, you will never pay anything if you only use the always free option.
 
 ## Step: 1 Create an Instance
@@ -38,4 +45,24 @@ For your “always free” ARM servers, you get up to 4 OCPU and 24 GB of RAM to
 
 For this Workshop i recommand at least 2 OCPU and 6GB of RAM, which should be plenty of resources for a reliable server that can host 20+ players at a time! (I use everything for my server🗿)
 
-### Two: 
+### Two: Create a new VCN ("Virtual Cloud Network" 🗿) 
+
+Edit the "Primary VNIC information" Section.
+
+I will let you choose what to do for this sub step.
+
+### Two: Generate an SSH key
+
+It's the most important thing keep it and don't lost it you will need it if you want to enter your VM anytime!
+
+## Step: 2 Connect to the VM
+
+The VM is about to run it's state is normally PROVISIONING you just need to wait untill it switch to RUNNING
+
+Now you will copy the Public IP Address to connect to your newly acquired VM and use the SSH protocol https://linuxcommand.org/lc3_man_pages/ssh1.html
+
+`ssh opc@"The ip of your VM" -i (the Key of your VM)`
+
+## Step: 3 Send a file to your VM
+
+You will download the Minecraft server.jar 
