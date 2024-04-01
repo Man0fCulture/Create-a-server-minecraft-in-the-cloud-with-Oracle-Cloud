@@ -138,7 +138,7 @@ So first of all install Tmux
 
 And now we will create a sesion
 
-I will let you read the documentation here if you have any question come ask to one of us!
+I will let you read the documentation here if you have any questions come and ask one of us!
 
 ## Step: Bonus Install Mods in your server
 
