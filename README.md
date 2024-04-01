@@ -23,7 +23,7 @@ The SCP protocol https://www.ionos.com/digitalguide/server/know-how/scp-secure-c
 
 ### In the VM
 
-JDK Package https://docs.oracle.com/en/java/
+Java https://docs.oracle.com/en/java/
 
 #### For the BONUS:
 
@@ -53,7 +53,7 @@ Edit the "Primary VNIC information" Section.
 
 I will let you choose what to do for this sub step.
 
-### Two: Generate an SSH key
+### three: Generate an SSH key
 
 It's the most important thing keep it and don't lost it you will need it if you want to enter your VM anytime!
 
@@ -65,6 +65,12 @@ Now you will copy the Public IP Address to connect to your newly acquired VM and
 
 `ssh opc@"The ip of your VM" -i (the Key of your VM)`
 
+You will install the update of your image
+
+`sudo yum update`
+
+And now leave it alone
+
 ## Step: 3 Send a file to your VM
 
 You will download the Minecraft server.jar 
@@ -75,6 +81,31 @@ Now you will use the SCP protocol to send to your VM the server.jar
 
 Example:
 ![image](https://github.com/Man0fCulture/Create-a-server-minecraft-in-the-cloud-with-Oracle-Cloud/assets/114578137/6b930645-dfd6-4b2a-abf9-f04884600383)
+
+## Step: 4 Install the dependency
+
+Now you will install java the lastest version with yum
+
+Now you will start the server
+
+`java -Xmx9G -Xms7G -jar server.jar nogui`
+
+Oh no! It didn"t work!
+
+Don't worry it's normal now you will have a eula.txt file 
+
+Edit it with nano to change the "eula=false" to "eula=true"
+
+To save exit, type CTRL + C, 'Y' to accept changes, and then ENTER.
+
+### Optional: change the properties of your server
+
+You can edit the server.properties
+
+Change the description of the server, the max-player connected at the same time etc...
+
+### Step: 5 Open the server Firewall
+
 
 
 
