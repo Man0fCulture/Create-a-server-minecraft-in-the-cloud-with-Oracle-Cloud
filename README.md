@@ -21,12 +21,21 @@ JDK Package https://docs.oracle.com/en/java/
 
 Tmux https://github.com/tmux/tmux/wiki
 
+## Step: 0 Create an account
+
+https://www.oracle.com/fr/cloud/free/
+You will need to enter your credit card but don't worry, you will never pay anything if you only use the always free option.
+
 ## Step: 1 Create an Instance
 
-The first thing that you’ll need to do to get your Minecraft server up and running is to create a VM instance ("Virtual Machine" 🗿).
+### One: Init the VM
+
+The first thing that you’ll need to do to get your Minecraft server up and running is to create a VM instance ("Virtual Machine" 🗿) select the "Create a VM instance".
 
 In the ‘Image and shape’ section change the shape of your VM and then select ‘Ampere’ (ARM) under ’Shape series’. Choose the ‘VM.Standard.A1.Flex’ shape and choose the amount of CPU and RAM that you want to allocate to this server. 
 
 For your “always free” ARM servers, you get up to 4 OCPU and 24 GB of RAM to allocate. This means that you can turn up one virtual machine with 4 OCPU and 24GB of RAM, or any combination up to the limit.
 
 For this Workshop i recommand at least 2 OCPU and 6GB of RAM, which should be plenty of resources for a reliable server that can host 20+ players at a time! (I use everything for my server🗿)
+
+### Two: 
