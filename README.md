@@ -1,9 +1,7 @@
 # Create-a-server-minecraft-in-the-cloud-with-Oracle-Cloud
-Workshop organized by Suleman MAQSOOD, John DE-KETTELBUTTER and Loic RAVALISON  for Epitech Students (April 2024)
+Workshop organized by Suleman MAQSOOD and Loic RAVALISON  for Epitech Students (April 2024)
 
 Suleman MAQSOOD https://github.com/Man0fCulture
-
-John DE-KETTELBUTTER https://github.com/JDK-Tek
 
 Loic RAVALISON https://github.com/loicrava
 
